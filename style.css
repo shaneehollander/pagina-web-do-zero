@@ -1,0 +1,130 @@
+:root {
+    --primary-color: #e50914;
+    --bg-color: #141414;
+    --card-bg: #1f1f1f;
+    --text-color: #ffffff;
+    --text-muted: #b3b3b3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(180deg, rgba(0,0,0,0.8) 0%, rgba(20,20,20,1) 100%);
+    padding: 80px 20px;
+    text-align: center;
+    border-bottom: 4px solid var(--primary-color);
+}
+
+header h1 {
+    font-size: 3rem;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+}
+
+.author-tag {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+main {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.intro-section {
+    background-color: var(--card-bg);
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    border-left: 5px solid var(--primary-color);
+}
+
+.movie-card {
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease;
+}
+
+.movie-card:hover {
+    transform: translateY(-5px);
+}
+
+.movie-content {
+    padding: 30px;
+}
+
+.movie-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.movie-title {
+    font-size: 1.8rem;
+}
+
+.movie-rating {
+    background-color: #f5c518;
+    color: #000;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.movie-description {
+    color: var(--text-muted);
+    margin-bottom: 20px;
+}
+
+.review-box {
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 6px;
+    border-left: 3px solid var(--primary-color);
+}
+
+.review-box h4 {
+    color: var(--primary-color);
+    margin-bottom: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #0a0a0a;
+    color: var(--text-muted);
+    border-top: 1px solid #333;
+    margin-top: 60px;
+}
